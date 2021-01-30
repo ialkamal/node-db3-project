@@ -1,0 +1,33 @@
+GET http://localhost:5000/api/schemes
+
+###
+
+GET http://localhost:5000/api/schemes/2
+
+###
+
+GET http://localhost:5000/api/schemes/5/steps
+
+###
+
+POST http://localhost:5000/api/schemes HTTP/1.1
+content-Type: application/json
+
+{
+    "scheme_name": "Go to Casablanca!"
+}
+
+###
+
+PUT http://localhost:5000/api/schemes/8 HTTP/1.1
+content-Type: application/json
+
+{
+    "scheme_name": "Go to New York!"
+}
+
+###
+
+DELETE http://localhost:5000/api/schemes/8
+
+###
